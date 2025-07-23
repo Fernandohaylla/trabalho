@@ -1,0 +1,93 @@
+/* Fonte base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #ccc;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  /* Barra de pesquisa */
+  .search-bar {
+    margin-left: auto;
+  }
+  
+  .search-bar input {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #888;
+    width: 200px;
+  }
+  
+  /* Container flex */
+  .container {
+    display: flex;
+  }
+  
+  /* Navegação lateral */
+  nav {
+    width: 150px;
+    height: 300px;
+    background-color: #93bd4f;
+    padding: 50px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Cards principais */
+  main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .noticia, .moodle, .projetos, .editais {
+    border: 1px solid #c8cccc;
+    padding: 15px;
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+    color: #000;
+  }
+  
+  .noticia { background-color: #e9da0e; }
+  .moodle  { background-color: #f5a001; }
+  .projetos { background-color: #5601f5c9; }
+  .editais { background-color: #4da829c9; }
+  
+  /* Rodapé */
+  .rodape {
+    background-color: #4da829c9;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9em;
+  }
+  
+  /* Esconder item */
+  .hidden {
+    display: none;
+  }
+  
