@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Guia dos Acadêmicos Flexbox</title>
+  <link rel="stylesheet" href="estilo.css">
+  </head>
+<body>
+  <header>
+    <h1>GUIA DOS ACADÊMICOS IFMS</h1>
+  </header>
+
+  <div class="container-principal">
+    <nav class="navegação">
+      <!-- onkeyup="pesquisar(this.value)" sem o botom-->
+      <input type="text" id="pesquisa" placeholder="Pesquisar serviços..." onkeyup="pesquisar(this.value)" >
+      <!-- <button onclick="ativarBusca()">Buscar</button> -->
+      <select id="filtro" onchange="filtrarPorCategoria(this.value)">
+        <option value="">Todas as categorias</option>
+        <option value="informativo">Informativos</option>
+        <option value="academico">Acadêmico</option>
+        <option value="sugestão">Sugestões</option> </select>
+      <div class="links">
+        <a href="https://www.ifms.edu.br/" target="_blank">Site do IFMS</a>
+        <a href="https://ead.ifms.edu.br/" target="_blank">Moodle IFMS</a>
+        <a href="https://suap.ifms.edu.br/bse/consulta_publica/" target="_blank">Boletim de Serviço</a>
+        <a href="https://www.ifms.edu.br/acesso-a-informacao/institucional/estrutura-organizacional/orgaos-de-apoio-e-controle/ouvidoria" target="_blank">Ouvidoria</a>
+      </div>
+    </nav>
+
+    <main class="conteudo-principal">
+        </main>
+
+  </div>
+
+  <footer class="rodape">
+    <p>IFMS 2025</p>
+  </footer>
+
+  <script src="guia.js"></script>
+</body>
+</html>
